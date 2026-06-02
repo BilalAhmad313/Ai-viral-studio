@@ -1,0 +1,15 @@
+:root{--brand-marquee-speed:22s}
+.brand-marquee-section{padding:18px 0 8px}
+.brand-marquee-wrap{position:relative;overflow:hidden;border-radius:16px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03)}
+.brand-marquee-wrap::before,.brand-marquee-wrap::after{content:'';position:absolute;top:0;bottom:0;width:90px;z-index:2;pointer-events:none}
+.brand-marquee-wrap::before{left:0;background:linear-gradient(90deg,rgba(11,16,32,0.95),rgba(11,16,32,0))}
+.brand-marquee-wrap::after{right:0;background:linear-gradient(-90deg,rgba(11,16,32,0.95),rgba(11,16,32,0))}
+.brand-marquee{display:flex;gap:22px;padding:18px 0;align-items:center;will-change:transform}
+.brand-marquee-track{display:flex;gap:22px;align-items:center;animation:brandMarquee var(--brand-marquee-speed) linear infinite}
+.brand-marquee-wrap:hover .brand-marquee-track{animation-play-state:paused}
+@keyframes brandMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)} }
+.brand-logo{flex:0 0 auto;display:flex;align-items:center;justify-content:center;gap:10px;padding:10px 16px;min-width:160px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.04);border-radius:14px;transition:transform .2s ease, box-shadow .2s ease}
+.brand-logo img{width:46px;height:46px;object-fit:contain;filter:drop-shadow(0 8px 18px rgba(0,0,0,0.35))}
+.brand-logo span{font-weight:800;letter-spacing:.3px;color:#eaf6ff}
+@media(max-width:640px){.brand-logo{min-width:130px;padding:10px 12px}.brand-logo img{width:40px;height:40px}}
+

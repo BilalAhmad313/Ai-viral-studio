@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Video Studio — AI Viral Studio</title>
+  <meta name="description" content="AI Video Studio UI placeholder (frontend only)." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <canvas id="particles"></canvas>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">AI Viral Studio</a>
+      <nav class="nav">
+        <a href="index.html#about">About</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="index.html#prompt-library">Prompt Library</a>
+        <a href="index.html#blog">Blog</a>
+        <a href="index.html#faq">FAQ</a>
+        <a class="cta" href="premium.html">Premium</a>
+        <a class="cta" href="login.html">Login</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section alt">
+      <div class="container" style="max-width:900px">
+        <h2 style="margin-top:0">AI Video Studio</h2>
+        <p class="lead" style="font-size:16px">Frontend UI placeholder: Text → Video, Image → Video, Script → Video. Backend rendering later.</p>
+
+        <div class="services-grid" style="margin-top:18px">
+          <div class="service card">
+            <h3>Text → Video</h3>
+            <p>Prompt likho aur storyboard/motion ideas generate karo.</p>
+          </div>
+          <div class="service card">
+            <h3>Image → Video</h3>
+            <p>Reference image pick karo aur short motion clip plan banao.</p>
+          </div>
+          <div class="service card">
+            <h3>Script → Video</h3>
+            <p>Script ko scene-by-scene storyboard me convert karo.</p>
+          </div>
+          <div class="service card">
+            <h3>AI Shorts / Reels</h3>
+            <p>Hooks, pacing, captions aur SEO-friendly structure.</p>
+          </div>
+        </div>
+
+        <div class="service card" style="margin-top:18px">
+          <h3>Quick Demo (UI)</h3>
+          <p class="muted">Generate button future me connect hoga. Abhi sirf UI samajhne ke liye hai.</p>
+          <div style="display:grid;gap:10px;grid-template-columns:1fr 1fr;align-items:end;margin-top:12px">
+            <label class="muted">Prompt<textarea style="min-height:110px" placeholder="Describe your video..." disabled></textarea></label>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end">
+              <button class="btn primary" type="button" disabled>Generate (Soon)</button>
+              <a class="btn ghost" href="index.html#tools">See tools</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© AI Viral Studio — All rights reserved.</p>
+      <p>Designed for creators · Built with free AI tools</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
